@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form id="application-form">
+        <h2>Personal Information</h2>
+        <div class="form-group">
+            <label for="FullName">FullName</label>
+            <input type="text"  id="FullName" name="FullName" placeholder="Enter Your Full Name" required>
+            <br>
+            <label>Phone Number</label>
+            <input type="tel" id="phone_number" name="phone_number" placeholder="Enter Your Phone Number" required>
+            <br>
+            <label>Email Address</label>
+            <input type="text" id="email" name="email" placeholder="Enter Your Email Address" required>
+            <br>
+            <label>Address</label>
+            <input type="text" id="Address" name="Address" placeholder="Enter Your Complete Address" required>
+            <br>
+            <label>City</label>
+            <input type="text" id="city" name="city" placeholder="Enter City" required>
+            <label>State</label>
+            <input type="text" id="state" name="state" placeholder="Enter State" required>
+            <label>ZIP Code</label>
+            <input type="text" id="zip_code" name="zip_code" placeholder="Enter ZIP Code" required>
+            <h2>Resume/CV</h2>
+            <label for="resume">Upload Resume/CV</label>
+            <input type="file" id="resume" name="resume" accept=".jpg,.pdf,.docx" required>
+        </div>
+        <h2>Education History</h2>
+        <div class="form-group">
+            <label>Highest Education</label>
+            <select id="education_level" name="education_level" required>
+              <option value="">Select</option>
+              <option value="High School">F.SC</option>
+                <option value="Associate's Degree">B.SC</option>
+                <option value="Bachelor's Degree">M.SC</option>
+                <option value="Master's Degree">PHD</option>
+            </select>
+        </div> 
+        <div class="form-group">
+            <label>Name of School</label>
+            <input type="text"  id="school_name" name="school_name" placeholder="Enter Your School Name" required>
+            <br>
+            <label>Major</label>
+            <input type="text"  id="major" name="major" placeholder="Enter Your Major Name" required>
+            <br>
+            <label>Graduation Year</label>
+            <input type="text"  id="graduation_year" name="graduation_year" placeholder="Enter Your Graduation Year" required>
+            <br>
+        </div>
+        <div id="employment-history">
+            <div class="employment-entry">
+              <h3>Employment History</h3>
+                <div class="form-group">
+                    <label>Job Title</label>
+                    <input type="text" id="job_title" name="job_title" placeholder="Enter Your Job Title" required>
+                    <label>Company Name</label>
+                    <input type="text" id="company_name" name="company_name" placeholder="Enter Your Company Name" required>
+                    <label>Start Date (YYYY-MM-DD)</label>
+                    <input type="date" id="start_date" name="start_date" required>
+                    <label>End Date (YYYY-MM-DD)</label>
+                    <input type="date" id="end_date" name="end_date" required>
+                    <label>Job Responsibilities</label>
+                    <textarea id="job_responsibilities" name="job_responsibilities" rows="5" required></textarea>
+                </div>
+            </div>
+        </div>
+        <button type="button" id="add-employment">Add Additional Job</button>
+        <h2>Skills</h2>
+        <div class="form-group">
+            <label>Relevant Skills</label>
+            <input type="text" id="relevant-skills" name="relevant-skills" placeholder="Enter Your Relevant Skills" required>
+            <label>Certification</label>
+            <input type="text" id="certifications" name="certifications" placeholder="Enter Your Certification" required>
+            <h2>Availability</h2>
+            <label>Start Date</label>
+            <input type="date" id="start_date" name="start_date" placeholder="Enter Your Start Date">
+            <label>Work Schedule</label>
+            <select id="preferred_schedule" name="preferred_schedule" required>
+                <option value="">Select</option>
+                <option value="Full-Time">Full-Time</option>
+                <option value="Part-Time">Part-Time</option>
+                <option value="Flexible">Remote</option>
+            </select>
+            <label>Willingness to Relocate</label>
+            <select name="Relocate" id="Relocate" required>
+                <option value="">Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <h2>Referance Name</h2>
+            <div id="references">
+                <div class="reference-entry">
+                    <label>Referance Name</label>
+                    <input type="text" id="reference_name" name="reference_name" placeholder="Enter Your Referance Name" required>
+                    <label>Reference Contact Info</label>
+                    <input type="text" id="reference_contact" name="reference_contact" placeholder="Enter Your Referance Contact Info" required>
+                    <label>Relationship To Applicant</label>
+                    <input type="text" id="reference_relationship" name="reference_relationship" placeholder="Enter Your Referance to Applicant" required>
+                    <button type="button" id="add-reference">Add Another Reference</button>
+                </div>
+            </div>
+            <h2>Additional Question</h2>
+            <label>Why Join Us?</label>
+            <textarea id="why_apply" name="why_apply" rows="5" required></textarea>
+            <h2>Terms Agreement</h2>
+            <label>Privacy Policy/Agree To Terms</label>
+            <input type="checkbox" id="terms_conditions" name="terms_conditions" required>
+            <label for="terms_conditions">
+            I agree to the <a href="#">Terms and Conditions</a> and acknowledge the <a href="#">Privacy Policy</a>
+            <br>
+            <button>Submit</button>
+            </label>
+        </div>
+        
+    </form>
+    <button id="view-applications">View Applications as Table</button>
+
+  <div id="applications-table"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+    
