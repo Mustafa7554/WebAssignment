@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #bb9595;
+    padding: 25px 0;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Align items evenly */
+    align-items: center; /* Vertically center items */
+    margin-right: -60px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .logo {
+    flex: 0 0 100px; /* Set fixed width for logo */
+    background-color: #bb9595;
+  }
+  
+  .logo img {
+    width: 100%; /* Use width 100% for responsive scaling */
+  }
+  
+  nav {
+    flex: 1; /* Allow navigation to expand to fill remaining space */
+    text-align: right;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Evenly distribute links */
+  }
+  
+  nav li {
+    margin: 0 10px; /* Adjust spacing between links */
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #f9f1f1;
+  }
+  
+  .hero {
+    background-image: url("hero-bg.png");
+    background-size: cover;
+    height: calc(100vh - 150px); /* Set height relative to viewport */
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+    color: #0d0c0c;
+    margin-right: -60px;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .hero button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  

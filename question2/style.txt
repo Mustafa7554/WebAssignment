@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #bb9595;
+    padding: 25px 0;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    float: left;
+    background-color: #bb9595;
+    background: #bb9595;
+    
+  }
+  
+  .logo img {
+    width: 100px;
+    height:50px;
+    padding: 0px;
+    margin-top: -30px;
+    margin-left: -10px;
+    background-color: #bb9595;
+    mix-blend-mode: multiply;
+
+
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 30px;
+    margin-top: -25px;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 40px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #f9f1f1;
+  }
+  
+  .hero {
+    background-image: url("hero-bg.png");
+    background-size:cover;
+    height: 200px;
+    background-position:100px;
+    padding: 200px;
+    text-align: center;
+    color: #d6b8b8;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .hero button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .services {
+    padding: 50px 0;
+    background-color: #bb9595;
+  }
+  
+  .services h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .service-card {
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
