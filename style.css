@@ -1,0 +1,181 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body
+{
+   background: lightslategray;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+.container
+{
+    position:relative;
+    width: 100%;
+    min-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.2);
+}
+.container .left
+{
+    position:relative;
+    background: #167266;
+    padding: 40px;
+}
+.container .right
+{
+    position:relative;
+    background: #fff;
+    padding: 40px;
+}
+.container .right .Info
+{
+    position:relative;
+    background: rgb(250, 249, 249);
+    padding: 40px;
+}
+.ProfileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.ProfileText .profileimg
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.ProfileText .profileimg img
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ProfileText h2
+{
+    color: #fff;
+    font-size: 2.0em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+
+}
+.ProfileText h2 span
+{
+    font-size: 0.7em;
+    font-weight: 300;
+}
+.Info
+{
+   padding: 40px;
+}
+.title
+{
+    color:black;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin-bottom: 20px;
+}
+
+.Info ul
+{
+    position: relative;
+}
+
+.Info ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+   
+}
+.Info ul li icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    color: #0af6d7;
+}
+.container .right
+{
+    position:relative;
+    background: #fff;
+    padding: 40px;
+}
+.about
+{
+    margin-bottom: 20px;
+}
+.title2
+{
+    position: relative;
+    font-family: sans-serif;
+    color: #167266;
+}
+.about ul
+{
+    position: relative;
+}
+.about ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+.text2
+{
+   font-size: large;
+   font-family: sans-serif;
+   font-weight: bold;
+}
+.aboutintertest
+{
+    margin-bottom: 20px;
+}
+.title3
+{
+    position: relative;
+    font-family: sans-serif;
+    color: #167266;
+}
+.aboutintertest ul
+{
+    position: relative;
+}
+.aboutintertest ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+.text3
+{
+   font-size: large;
+   font-family: sans-serif;
+   font-weight: bold;
+   text-transform: uppercase;
+   
+}
